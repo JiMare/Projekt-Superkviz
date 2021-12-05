@@ -6,7 +6,7 @@ export const List = ({reset}) => {
 
   useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/Czechitas-React-podklady/superkviz-api/main/quizes.json"
+      "https://raw.githubusercontent.com/JiMare/superkviz-api/main/quizes.json"
     )
       .then((response) => response.json())
       .then((data) => setList(data));
