@@ -11,7 +11,8 @@ export const Detail = ({
 
   useEffect(() => {
     fetch(
-      `https://raw.githubusercontent.com/Czechitas-React-podklady/superkviz-api/main/quiz/${id}.json`
+      `https://raw.githubusercontent.com/JiMare/superkviz-api/main/quiz/${id}.json`
+      //`https://raw.githubusercontent.com/Czechitas-React-podklady/superkviz-api/main/quiz/${id}.json`
     )
       .then((response) => response.json())
       .then((data) => pickQuizDetail(data));

@@ -20,7 +20,7 @@ export const AnswerResult = ({ question, answer, increaseRightAnswers }) => {
       />
 
       <div className="result__content">
-        <h3 className="result__title">1. {question.title}</h3>
+        <h3 className="result__title">{question.id}. {question.title}</h3>
         <p className="result__answer">
           Tvoje odpověď: {question.answers[answer]}
         </p>
